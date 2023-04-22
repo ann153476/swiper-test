@@ -3,7 +3,6 @@ html,
 body {
   position: relative;
   height: 100%;
-  --swiper-theme-color: #ff7700;
 }
 
 body {
@@ -35,10 +34,10 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 .mySwiper {
   height: 400px;
 }
 .mySwiper img {
   width: 200px;
 }
+/*  */

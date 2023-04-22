@@ -9984,69 +9984,18 @@ var _effectCoverflow = _interopRequireDefault(require("./modules/effect-coverflo
 var _effectCreative = _interopRequireDefault(require("./modules/effect-creative/effect-creative.js"));
 var _effectCards = _interopRequireDefault(require("./modules/effect-cards/effect-cards.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./core/core.js":"node_modules/swiper/core/core.js","./modules/virtual/virtual.js":"node_modules/swiper/modules/virtual/virtual.js","./modules/keyboard/keyboard.js":"node_modules/swiper/modules/keyboard/keyboard.js","./modules/mousewheel/mousewheel.js":"node_modules/swiper/modules/mousewheel/mousewheel.js","./modules/navigation/navigation.js":"node_modules/swiper/modules/navigation/navigation.js","./modules/pagination/pagination.js":"node_modules/swiper/modules/pagination/pagination.js","./modules/scrollbar/scrollbar.js":"node_modules/swiper/modules/scrollbar/scrollbar.js","./modules/parallax/parallax.js":"node_modules/swiper/modules/parallax/parallax.js","./modules/zoom/zoom.js":"node_modules/swiper/modules/zoom/zoom.js","./modules/controller/controller.js":"node_modules/swiper/modules/controller/controller.js","./modules/a11y/a11y.js":"node_modules/swiper/modules/a11y/a11y.js","./modules/history/history.js":"node_modules/swiper/modules/history/history.js","./modules/hash-navigation/hash-navigation.js":"node_modules/swiper/modules/hash-navigation/hash-navigation.js","./modules/autoplay/autoplay.js":"node_modules/swiper/modules/autoplay/autoplay.js","./modules/thumbs/thumbs.js":"node_modules/swiper/modules/thumbs/thumbs.js","./modules/free-mode/free-mode.js":"node_modules/swiper/modules/free-mode/free-mode.js","./modules/grid/grid.js":"node_modules/swiper/modules/grid/grid.js","./modules/manipulation/manipulation.js":"node_modules/swiper/modules/manipulation/manipulation.js","./modules/effect-fade/effect-fade.js":"node_modules/swiper/modules/effect-fade/effect-fade.js","./modules/effect-cube/effect-cube.js":"node_modules/swiper/modules/effect-cube/effect-cube.js","./modules/effect-flip/effect-flip.js":"node_modules/swiper/modules/effect-flip/effect-flip.js","./modules/effect-coverflow/effect-coverflow.js":"node_modules/swiper/modules/effect-coverflow/effect-coverflow.js","./modules/effect-creative/effect-creative.js":"node_modules/swiper/modules/effect-creative/effect-creative.js","./modules/effect-cards/effect-cards.js":"node_modules/swiper/modules/effect-cards/effect-cards.js"}],"index.js":[function(require,module,exports) {
+},{"./core/core.js":"node_modules/swiper/core/core.js","./modules/virtual/virtual.js":"node_modules/swiper/modules/virtual/virtual.js","./modules/keyboard/keyboard.js":"node_modules/swiper/modules/keyboard/keyboard.js","./modules/mousewheel/mousewheel.js":"node_modules/swiper/modules/mousewheel/mousewheel.js","./modules/navigation/navigation.js":"node_modules/swiper/modules/navigation/navigation.js","./modules/pagination/pagination.js":"node_modules/swiper/modules/pagination/pagination.js","./modules/scrollbar/scrollbar.js":"node_modules/swiper/modules/scrollbar/scrollbar.js","./modules/parallax/parallax.js":"node_modules/swiper/modules/parallax/parallax.js","./modules/zoom/zoom.js":"node_modules/swiper/modules/zoom/zoom.js","./modules/controller/controller.js":"node_modules/swiper/modules/controller/controller.js","./modules/a11y/a11y.js":"node_modules/swiper/modules/a11y/a11y.js","./modules/history/history.js":"node_modules/swiper/modules/history/history.js","./modules/hash-navigation/hash-navigation.js":"node_modules/swiper/modules/hash-navigation/hash-navigation.js","./modules/autoplay/autoplay.js":"node_modules/swiper/modules/autoplay/autoplay.js","./modules/thumbs/thumbs.js":"node_modules/swiper/modules/thumbs/thumbs.js","./modules/free-mode/free-mode.js":"node_modules/swiper/modules/free-mode/free-mode.js","./modules/grid/grid.js":"node_modules/swiper/modules/grid/grid.js","./modules/manipulation/manipulation.js":"node_modules/swiper/modules/manipulation/manipulation.js","./modules/effect-fade/effect-fade.js":"node_modules/swiper/modules/effect-fade/effect-fade.js","./modules/effect-cube/effect-cube.js":"node_modules/swiper/modules/effect-cube/effect-cube.js","./modules/effect-flip/effect-flip.js":"node_modules/swiper/modules/effect-flip/effect-flip.js","./modules/effect-coverflow/effect-coverflow.js":"node_modules/swiper/modules/effect-coverflow/effect-coverflow.js","./modules/effect-creative/effect-creative.js":"node_modules/swiper/modules/effect-creative/effect-creative.js","./modules/effect-cards/effect-cards.js":"node_modules/swiper/modules/effect-cards/effect-cards.js"}],"tooswiper/too.js":[function(require,module,exports) {
 "use strict";
 
 var _swiper = _interopRequireWildcard(require("swiper"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-// import Swiper from "swiper";
-
-// const swiper = new Swiper(".mySwiper", {
-//   modules: [Navigation, Pagination, EffectCoverflow, Autoplay],
-//   pagination: {
-//     el: ".swiper-pagination",
-//     type: "progressbar",
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-var swiper = new _swiper.default(".swiper", {
+var swiper = new _swiper.default(".mySwiper", {
   modules: [_swiper.Navigation, _swiper.Pagination, _swiper.EffectCoverflow, _swiper.Autoplay],
-  // Default parameters
-  slidesPerView: 2,
-  spaceBetween: 8,
-  loop: true,
-  centeredSlides: true,
-  speed: 1000,
-  grabCursor: true,
-  loopFillGroupWithBlank: true,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 20,
-    scale: 0.6,
-    slideShadows: false,
-    depth: 400
-  },
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true
-  },
+  direction: "vertical",
   pagination: {
     el: ".swiper-pagination",
     clickable: true
-  },
-  navigation: {
-    enabled: false,
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  breakpoints: {
-    768: {
-      spaceBetween: 18,
-      navigation: {
-        enabled: true
-      }
-    },
-    1280: {
-      spaceBetween: 32,
-      navigation: {
-        enabled: true
-      }
-    }
   }
 });
 },{"swiper":"node_modules/swiper/swiper.esm.js"}],"C:/Users/ann15/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -10074,7 +10023,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51977" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51567" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -10218,5 +10167,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/ann15/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/swiper-test.e31bb0bc.js.map
+},{}]},{},["C:/Users/ann15/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","tooswiper/too.js"], null)
+//# sourceMappingURL=/too.19f7b815.js.map
